@@ -71,6 +71,11 @@ Documents produced by the working group will include the following:
     - https://datatracker.ietf.org/doc/rfc9278/
     - https://datatracker.ietf.org/doc/draft-ietf-cose-key-thumbprint/
 
+Based on conversations on OAUTH and SPICE lists, the following work items have been proposed to be moved to SPICE, assuming authors / WGs agree, and SPICE forms to be able to receive them:
+
+- JWT and CWT Status List https://datatracker.ietf.org/doc/draft-looker-oauth-jwt-cwt-status-list/
+- SD-JWT-based Verifiable Credentials (SD-JWT VC) https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/
+
 ## Milestones
 
 MM YYYY - Submit a Use Case and Terminology document to the IESG for publication
