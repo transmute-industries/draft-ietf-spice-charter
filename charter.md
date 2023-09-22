@@ -16,15 +16,15 @@ Coordination with RATS, OAUTH, JOSE, COSE, SCITT and WIMSE are important to ensu
 
 ### In-Scope
 
-The work of the SPICE WG aligns JWT and CWT registered claim names for use with the 'Three Party Model' as introduced by W3C's 'Verifiable Credentials Data Model v2.0' specification (https://www.w3.org/TR/vc-data-model-2.0/).
+The work of the SPICE WG aligns JWT and CWT registered claim names for use with the 'Three Role Model' as introduced by W3C's 'Verifiable Credentials Data Model v2.0' specification (https://w3c.github.io/vc-data-model/#roles).
 
-The SPICE WG will develop a framework in support of the 'Three Party Model', selective disclosure, and unlinkability.
+The SPICE WG will develop a framework in support of the 'Three Role Model', selective disclosure, and unlinkability.
 The framework will provide an architecture that enables consistent application of JOSE and COSE, similar to the work done in https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21#name-eat-as-a-framework and https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof.
 The intent is also to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification (https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically CWT Claim Sets, or other CBOR data structures.
 <!--based on complementary work conducted in JOSE, COSE, and OAUTH, if possible. -->
 
 Leveraging COSE enables reuse of valuable extensions, such as transparency service inclusion proofs, as defined in https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/ and counter signatures as defined in https://datatracker.ietf.org/doc/html/rfc9338.
-Both definitions are helpful building blocks for scenarios involving multiple parties that consume and produce credentials using the "Three Party Model".
+Both definitions are helpful building blocks for scenarios involving multiple parties that consume and produce credentials using the "Three Role Model".
 Examples include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
 
 ### Out-of-Scope
@@ -84,7 +84,7 @@ MM YYYY - Submit a document covering selective disclosure with COSE to the IESG 
 
 ## Why IETF
 
-Because of the security and integrity aspects directly involved in verifiable credentials that utilize a three party model, particularly their reliance on asymmetric cryptography with possible intermediaries during exchange, this topic must be worked with in cooperation with existing security expertise in the IETF and IRTF.  The broader community engaging in the verifiable credential space is converging within the IETF because of this security expertise. Multiple editors of existing work in W3C related to verifiable credentials are engaged and supportive of this work, and believe that IETF is the appropriate location for this work. By working in IETF we can ensure broader engagement with the work, security, and privacy review by the appropriate experts at IETF, and better coordinate with IETF groups that are leveraging or extending this work for use in various IETF standards.
+Because of the security and integrity aspects directly involved in verifiable credentials that utilize a Three Role Model, particularly their reliance on asymmetric cryptography with possible intermediaries during exchange, this topic must be worked with in cooperation with existing security expertise in the IETF and IRTF.  The broader community engaging in the verifiable credential space is converging within the IETF because of this security expertise. Multiple editors of existing work in W3C related to verifiable credentials are engaged and supportive of this work, and believe that IETF is the appropriate location for this work. By working in IETF we can ensure broader engagement with the work, security, and privacy review by the appropriate experts at IETF, and better coordinate with IETF groups that are leveraging or extending this work for use in various IETF standards.
 
 ## Relationship with W3C VCWG
 The VCWG, which developed the three-party model and defined the 'Verifiable Credentials Data Model v2.0' specification (https://www.w3.org/TR/vc-data-model-2.0/) has created a JSON-LD data model and is defining mechanisms to secure this JSON-LD data model. It is anticipated that JSON-LD credentials will continue to be developed in the VCWG and the W3C. SPICE will concern itself with JSON, CBOR and other formats of digital credentials that may be required by IETF use cases.
