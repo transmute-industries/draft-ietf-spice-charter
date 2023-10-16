@@ -19,7 +19,7 @@ Digitial credentials are identity documents with attributes about the identity. 
 
 ## Goals
 
-Coordination with RATS, OAUTH, JOSE, COSE, SCITT and WIMSE are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread accross several existing places in the IETF.
+Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread accross several existing places in the IETF.
 
 ### In-Scope
 
