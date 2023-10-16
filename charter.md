@@ -15,7 +15,7 @@ As a guiding principle for the SPICE WG, claims that work well in JSON must work
 
 The SPICE WG will support digitial credential formats leveraging existing IETF standards and IANA registries, and create a framework for consitently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
 
-Digitial credentials are identity documents with attributes about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
+Digitial credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
 ## Goals
 
