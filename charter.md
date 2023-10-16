@@ -71,7 +71,10 @@ Some of these use cases may be solved by the group directly, for others the grou
 
 Documents produced by the working group will include the following:
 
-- Architecture document - addressing the desired properties of "digital credentials"
+- Architecture document
+    - addressing the desired properties of "digital credentials"
+    - commenting on registries
+    - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
 - Unlinkabilty of SD/VC with CWTs (TBD )
 - Selective Disclosure with CWTs https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/
 
@@ -79,6 +82,7 @@ Documents produced by the working group will include the following:
 
 - Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
 - Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
+- Proofs of Inclusion / Consistency - https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/
 - TBD Identity Specification inspired by
     - KEYTRANS
     - (JWK Thumbprint URI, jkt) https://datatracker.ietf.org/doc/rfc9278/ 
@@ -89,6 +93,7 @@ they might become potential candidates to be moved to a SPICE WG, pending WG for
 
 - JWT and CWT Status List https://datatracker.ietf.org/doc/draft-looker-oauth-jwt-cwt-status-list/
 - SD-JWT-based Verifiable Credentials (SD-JWT VC) https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/
+
 
 ## Milestones
 
