@@ -28,7 +28,18 @@ The work of the SPICE WG aligns JWT and CWT registered claim names for use with 
 The SPICE WG will develop a framework in support of the 'Three Role Model', selective disclosure, and unlinkability.
 The framework will provide an architecture that enables consistent application of JOSE and COSE, similar to the work done in https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21#name-eat-as-a-framework and https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof.
 The intent is also to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification (https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically CWT Claim Sets, or other CBOR data structures.
-<!--based on complementary work conducted in JOSE, COSE, and OAUTH, if possible. -->
+
+A short list of lessons learned:
+1. Expressive data models, such as RDF, are not necessarily suitable for
+   all use-cases outside W3C
+2. Reusing existing semantics that fit the domain well, such as provided by
+   the JWT/CWT Claims registry, provide can improve interoperability,
+   significantly
+3. Focussing on crisp technical specifications and producing sparate
+   informative guidance documents helps to keep technical interested parties
+   involved
+4. Compact encoding matters and aligning JSON and CBOR provides
+   the basis for simpler interoperability and smaller specification
 
 Leveraging COSE enables reuse of valuable extensions, such as transparency service inclusion proofs, as defined in https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/ and counter signatures as defined in https://datatracker.ietf.org/doc/html/rfc9338.
 Both definitions are helpful building blocks for scenarios involving multiple parties that consume and produce credentials using the "Three Role Model".
