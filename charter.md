@@ -5,6 +5,8 @@
 Digital credentials based on IETF standards have use cases ranging from personal credentials, such as drivers licenses and vaccination proofs, to business-to-business or business-to-government applications.
 One example is fraud and counterfitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
 
+These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
+
 In order to meet privacy, security, and sustainability objectives, digital credentials need to be designed with awareness of computation and storage constraints associated with their use cases.
 These objectives can be achieved by leveraging industry adopted standards and managing tradeoffs between cutting-edge and well-established cryptography.
 
@@ -88,3 +90,4 @@ Because of the security and integrity aspects directly involved in verifiable cr
 
 ## Relationship with W3C VCWG
 The VCWG, which developed the 'Three Role Model' and defined the 'Verifiable Credentials Data Model v2.0' specification (https://w3c.github.io/vc-data-model/#roles) has created a JSON-LD data model and is defining mechanisms to secure this JSON-LD data model. It is anticipated that JSON-LD credentials will continue to be developed in the VCWG and the W3C. SPICE will concern itself with JSON, CBOR and other formats of digital credentials that may be required by IETF use cases.
+
