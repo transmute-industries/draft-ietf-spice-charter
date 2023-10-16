@@ -13,7 +13,9 @@ These objectives can be achieved by leveraging industry adopted standards and ma
 
 As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properies are in support sustainable design.
 
-The SPICE WG aims to support digitial credential formats based on existing IETF standards, and extend them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
+The SPICE WG will support digitial credential formats leveraging existing IETF standards and IANA registries, and create a framework for consitently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
+
+Digitial credentials are identity documents with attributes about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
 ## Goals
 
