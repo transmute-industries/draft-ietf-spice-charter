@@ -17,6 +17,8 @@ The SPICE WG will support digitial credential formats leveraging existing IETF s
 
 Digitial credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
+Examples of producing and consuming digital credentials with the "Three Role Model" include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
+
 ## Goals
 
 Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread accross several existing places in the IETF.
@@ -40,10 +42,6 @@ A short list of lessons learned:
    involved
 4. Compact encoding matters and aligning JSON and CBOR provides
    the basis for simpler interoperability and smaller specification
-
-Leveraging COSE enables reuse of valuable extensions, such as transparency service inclusion proofs, as defined in https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/ and counter signatures as defined in https://datatracker.ietf.org/doc/html/rfc9338.
-Both definitions are helpful building blocks for scenarios involving multiple parties that consume and produce credentials using the "Three Role Model".
-Examples include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
 
 ### Out-of-Scope
 
@@ -94,6 +92,7 @@ Documents produced by the working group will include the following:
 - Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
 - Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
 - Proofs of Inclusion / Consistency - https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/
+- Countersignatures - https://datatracker.ietf.org/doc/html/rfc9338
 - TBD Identity Specification inspired by
     - KEYTRANS
     - (JWK Thumbprint URI, jkt) https://datatracker.ietf.org/doc/rfc9278/ 
