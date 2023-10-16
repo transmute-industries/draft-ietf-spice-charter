@@ -3,23 +3,23 @@
 ## Introduction
 
 Digital credentials based on IETF standards have use cases ranging from personal credentials, such as drivers licenses and vaccination proofs, to business-to-business or business-to-government applications.
-One example is fraud and counterfitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
+One example is fraud and counter-fitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
 
 These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
 
 In order to meet privacy, security, and sustainability objectives, digital credentials need to be designed with awareness of computation and storage constraints associated with their use cases.
 The SPICE WG focuses on a few explicit higher level objectives: unreliability enabling trustworthy exposition of minimal required information to prevent correlation and other attacks, selective disclosure enabling controlled exposition and a authorized subset of likability, a well-curated, concise claim vocabulary enabling cross-domain interchangeability via registration authorizes (i.e., IANA).
-These objectives can be achieved by leveraging industry adopted standards and managing tradeoffs between cutting-edge and well-established cryptography.
+These objectives can be achieved by leveraging industry adopted standards and managing trade-offs between cutting-edge and well-established cryptography.
 
-As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properies are in support sustainable design.
+As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properties are in support sustainable design.
 
-The SPICE WG will support digitial credential formats leveraging existing IETF standards and IANA registries, and create a framework for consitently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
+The SPICE WG will support digital credential formats leveraging existing IETF standards and IANA registries, and create a framework for consistently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
 
-Digitial credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
+Digital credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
 ## Goals
 
-Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread accross several existing places in the IETF.
+Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF.
 
 ### In-Scope
 
