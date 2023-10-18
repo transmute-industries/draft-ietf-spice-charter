@@ -47,26 +47,18 @@ A short list of lessons learned:
 
 The working group will NOT address transport protocols, such as those developed at OAUTH, OIDF, W3C or ISO in the scope of its initial charter.
 The working group will NOT address specific credential use cases, such as "personal credentials" or "software supply chain".
-The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retaining semantic interoperability is not in-scope. Newly registered claims will have broader applicability, to both JWT and CWT use cases.
+The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retaining semantic interchangeability is not in-scope. Newly registered claims will have broader applicability, to both JWT and CWT use cases.
 
-## Motivating Use Cases 
+## Key Design Properties of Digital Credentials
 
-There are several expanding use cases and common patterns that motivate the working group and broader community, including:
-
-- Compact selective disclosure in verifiable credentials via CBOR, in support of optical and radio transports.
-- Expanding use of topic-specific micro-credentials, particularly in education
-- Digitization of physical supply chain credentials in multiple jurisdictions requiring CBOR credentials at volume with system to system presentations
-  - Impending public tests with US CBP, USDA, FDA, and other regulatory agencies
-      - https://github.com/w3c-ccg/traceability-vocab
-  - Digital Product Passports
-      - https://hadea.ec.europa.eu/calls-proposals/digital-product-passport_en
-- IoT, Control Systems, and Critical Infrastructure related Credentials
-- Credentials related to authenticity and provenance, especially related to digital media
-- Offline exchange (in person) of credentials that may have been internet issued
-- Embedding of credentials in other data formats
-- Digital Wallet Initiatives
-
-Some of these use cases may be solved by the group directly, for others the group may enable a solution by providing supporting specifications.
+- Unlinkability (preventing tracking while proving attributes / capabilities)
+- Selective Disclosure (supporting user agency, data minimization, redaction)
+- Authenticity (ensuring information is trustworthy and can be authenticated)
+- Integrity (ensuring tampering with information is always evident)
+- Confidentiality (ensuring information is protected from unauthorized access)
+- Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
+- Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
+- Usability and Feasibility ( The core operations must be easy to understand and use, and possible to integrate with existing platforms)
 
 ## Motivating Factors for conducting this work at IETF
 
