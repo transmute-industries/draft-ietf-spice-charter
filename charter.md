@@ -65,11 +65,11 @@ The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retain
 Documents produced by the working group will include the following:
 
 - Architecture document
-    - addressing the desired properties of "digital credentials"
+    - addressing the desired properties of "Key Design Properties of Digital Credentials"
     - commenting on registries
     - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
 - Unlinkabilty of SD/VC with CWTs (TBD )
-- Selective Disclosure with CWTs https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/
+- Selective Disclosure with CWTs https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/ may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
 
 ## Inspiring Input Documents
 
