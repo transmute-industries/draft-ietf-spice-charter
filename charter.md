@@ -3,25 +3,25 @@
 ## Introduction
 
 Digital credentials based on IETF standards have use cases ranging from personal credentials, such as drivers licenses and vaccination proofs, to business-to-business or business-to-government applications.
-One example is fraud and counterfitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
+One example is fraud and counter-fitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
 
 These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
 
 In order to meet privacy, security, and sustainability objectives, digital credentials need to be designed with awareness of computation and storage constraints associated with their use cases.
 The SPICE WG focuses on a few explicit higher level objectives: unreliability enabling trustworthy exposition of minimal required information to prevent correlation and other attacks, selective disclosure enabling controlled exposition and a authorized subset of likability, a well-curated, concise claim vocabulary enabling cross-domain interchangeability via registration authorizes (i.e., IANA).
-These objectives can be achieved by leveraging industry adopted standards and managing tradeoffs between cutting-edge and well-established cryptography.
+These objectives can be achieved by leveraging industry adopted standards and managing trade-offs between cutting-edge and well-established cryptography.
 
-As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properies are in support sustainable design.
+As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properties are in support sustainable design.
 
-The SPICE WG will support digitial credential formats leveraging existing IETF standards and IANA registries, and create a framework for consitently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
+The SPICE WG will support digital credential formats leveraging existing IETF standards and IANA registries, and create a framework for consistently extending them to support stakeholders that are building compliance and automation systems based on industry adopted cryptography and protocols.
 
-Digitial credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
+Digital credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
 Examples of producing and consuming digital credentials with the "Three Role Model" include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
 
 ## Goals
 
-Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread accross several existing places in the IETF.
+Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF.
 
 ### In-Scope
 
@@ -37,7 +37,7 @@ A short list of lessons learned:
 2. Reusing existing semantics that fit the domain well, such as provided by
    the JWT/CWT Claims registry, provide can improve interoperability,
    significantly
-3. Focussing on crisp technical specifications and producing sparate
+3. Focussing on crisp technical specifications and producing separate
    informative guidance documents helps to keep technical interested parties
    involved
 4. Compact encoding matters and aligning JSON and CBOR provides
@@ -50,15 +50,15 @@ The working group will NOT address transport protocols, such as those developed 
 The working group will NOT address specific credential use cases, such as "personal credentials" or "software supply chain".
 Instead, the SPICE WG will reuse existing work or incorporate emerging work items produced by other IETF working groups, such as SCITT, OAUTH. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases. 
 
-The working group will NOT be limited to JSON-LD data models, but to the extent that JSON-LD is compatible with JWT regsitered claims and private claims, the W3C Verifiable Data Model remains supported, as described in https://www.w3.org/TR/vc-jose-cose.
+The working group will NOT be limited to JSON-LD data models, but to the extent that JSON-LD is compatible with JWT registered claims and private claims, the W3C Verifiable Data Model remains supported, as described in https://www.w3.org/TR/vc-jose-cose.
 
 ## Motivating Use Cases 
 
 There are several expanding use cases and common patterns that motivate the working group and broader community, including:
 
 - Compact selective disclosure in verifiable credentials via CBOR, in support of optical and radio transports.
-- Expanding use of topic-specific microcredentials, particularly in education
-- Digitization of physical supply chain credentials in multiple jurisdictions requiring CBOR creds at volume with system to system presentations
+- Expanding use of topic-specific micro-credentials, particularly in education
+- Digitization of physical supply chain credentials in multiple jurisdictions requiring CBOR credentials at volume with system to system presentations
   - Impending public tests with US CBP, USDA, FDA, and other regulatory agencies
       - https://github.com/w3c-ccg/traceability-vocab
   - Digital Product Passports
@@ -98,7 +98,7 @@ Documents produced by the working group will include the following:
     - (JWK Thumbprint URI, jkt) https://datatracker.ietf.org/doc/rfc9278/ 
     - (COSE Key Thumbprint URI, ckt) https://datatracker.ietf.org/doc/draft-ietf-cose-key-thumbprint/
 
-Based on conversations on OAUTH and SPICE lists, while the following items are currenly adopted by OAUTH,
+Based on conversations on OAUTH and SPICE lists, while the following items are currently adopted by OAUTH,
 they might become potential candidates to be moved to a SPICE WG, pending WG forming:
 
 - JWT and CWT Status List https://datatracker.ietf.org/doc/draft-looker-oauth-jwt-cwt-status-list/
