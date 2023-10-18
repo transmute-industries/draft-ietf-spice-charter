@@ -66,10 +66,11 @@ Documents produced by the working group will include the following:
 
 - Architecture document
     - addressing the desired properties of "Key Design Properties of Digital Credentials"
-    - commenting on registries
+    - commenting on JWT/CWT registries
     - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
-- Unlinkabilty of SD/VC with CWTs (TBD )
-- Selective Disclosure with CWTs https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/ may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
+- Unlinkabilty of SD/VC with CWTs
+    - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/ may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
+- Identity Document serializations using JWT/CWT
 
 ## Inspiring Input Documents
 
@@ -77,7 +78,7 @@ Documents produced by the working group will include the following:
 - Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
 - Proofs of Inclusion / Consistency - https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/
 - Countersignatures - https://datatracker.ietf.org/doc/html/rfc9338
-- TBD Identity Specification inspired by
+- Identity Document specification inspired by
     - KEYTRANS
     - (JWK Thumbprint URI, jkt) https://datatracker.ietf.org/doc/rfc9278/ 
     - (COSE Key Thumbprint URI, ckt) https://datatracker.ietf.org/doc/draft-ietf-cose-key-thumbprint/
