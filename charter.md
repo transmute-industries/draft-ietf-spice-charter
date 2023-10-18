@@ -69,8 +69,10 @@ Documents produced by the working group will include the following:
     - commenting on JWT/CWT registries
     - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
 - Unlinkabilty of SD/VC with CWTs
+- Selective Disclosure with CWTs
     - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/ may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
-- Identity Document serializations using JWT/CWT
+- Identity Document serializations using JWT/CWT 
+
 
 ## Inspiring Input Documents
 
@@ -84,7 +86,7 @@ Documents produced by the working group will include the following:
     - (COSE Key Thumbprint URI, ckt) https://datatracker.ietf.org/doc/draft-ietf-cose-key-thumbprint/
 
 Based on conversations on OAUTH and SPICE lists, while the following items are currently adopted by OAUTH,
-they might become potential candidates to be moved to a SPICE WG, pending WG forming:
+they might become potential candidates to be moved to a SPICE WG, pending WG forming and consensus:
 
 - JWT and CWT Status List https://datatracker.ietf.org/doc/draft-looker-oauth-jwt-cwt-status-list/
 - SD-JWT-based Verifiable Credentials (SD-JWT VC) https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/
@@ -92,14 +94,7 @@ they might become potential candidates to be moved to a SPICE WG, pending WG for
 
 ## Milestones
 
-MM YYYY - Submit a Use Case and Terminology document to the IESG for publication
-MM YYYY - Submit an Architecture document to the IESG for publication
-MM YYYY - Submit a document covering selective disclosure with COSE to the IESG for publication
-
-## Why IETF
-
-Because of the security and integrity aspects directly involved in verifiable credentials that utilize a "Three Role Model", particularly their reliance on asymmetric cryptography with possible intermediaries during exchange, this topic must be worked with in cooperation with existing security expertise in the IETF and IRTF.  The broader community engaging in the verifiable credential space is converging within the IETF because of this security expertise. Multiple editors of existing work in W3C related to verifiable credentials are engaged and supportive of this work, and believe that IETF is the appropriate location for this work. By working in IETF we can ensure broader engagement with the work, security, and privacy review by the appropriate experts at IETF, and better coordinate with IETF groups that are leveraging or extending this work for use in various IETF standards.
-
-## Relationship with W3C VCWG
-The VCWG, which developed the 'Three Role Model' and defined the 'Verifiable Credentials Data Model v2.0' specification (https://w3c.github.io/vc-data-model/#roles) has created a JSON-LD data model and is defining mechanisms to secure this JSON-LD data model. It is anticipated that JSON-LD credentials will continue to be developed in the VCWG and the W3C. SPICE will concern itself with JSON, CBOR and other formats of digital credentials that may be required by IETF use cases.
-
+- 10 2024 - Submit an informational architecture document to the IESG for publication
+- 06 2024 - Submit a document as a proposed standard covering selective disclosure with CWT to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering unlinkability with CWT to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering identity documents to the IESG for publication
