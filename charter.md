@@ -21,7 +21,7 @@ Examples of producing and consuming digital credentials with the "Three Role Mod
 
 ## Goals
 
-Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF.
+Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
 
 ### In-Scope
 
@@ -46,11 +46,8 @@ A short list of lessons learned:
 ### Out-of-Scope
 
 The working group will NOT address transport protocols, such as those developed at OAUTH, OIDF, W3C or ISO in the scope of its initial charter.
-
 The working group will NOT address specific credential use cases, such as "personal credentials" or "software supply chain".
-Instead, the SPICE WG will reuse existing work or incorporate emerging work items produced by other IETF working groups, such as SCITT, OAUTH. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases. 
-
-The working group will NOT be limited to JSON-LD data models, but to the extent that JSON-LD is compatible with JWT registered claims and private claims, the W3C Verifiable Data Model remains supported, as described in https://www.w3.org/TR/vc-jose-cose.
+The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retaining semantic interoperability is not in-scope. Newly registered claims will have broader applicability, to both JWT and CWT use cases.
 
 ## Motivating Use Cases 
 
