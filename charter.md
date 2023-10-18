@@ -21,7 +21,7 @@ Examples of producing and consuming digital credentials with the "Three Role Mod
 
 ## Goals
 
-Coordination with RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
+Coordination with CFRG, RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
 
 ### In-Scope
 
@@ -59,11 +59,6 @@ The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retain
 - Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
 - Usability and Feasibility ( The core operations must be easy to understand and use, and possible to integrate with existing platforms)
-
-## Motivating Factors for conducting this work at IETF
-
-- Privacy and security expertise at IETF / IRTF specifically relevant to this work
-- Anticipated successful conclusion of the VC 2.0 Working Group at W3C
 
 ## Work Items
 
