@@ -3,7 +3,7 @@
 ## Introduction
 
 Digital credentials based on IETF standards have use cases ranging from personal credentials, such as drivers licenses and vaccination proofs, to business-to-business or business-to-government applications.
-One example is fraud and counter-fitting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
+One example is fraud and counterfeiting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
 
 These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
 
