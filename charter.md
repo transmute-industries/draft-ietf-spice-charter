@@ -78,6 +78,7 @@ Documents produced by the working group will include the following:
 
 - Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
 - Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
+- Unlinkable Selective Disclosure with BBS https://datatracker.ietf.org/doc/draft-irtf-cfrg-bbs-signatures/
 - Proofs of Inclusion / Consistency - https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/
 - Countersignatures - https://datatracker.ietf.org/doc/html/rfc9338
 - Identity Document specification inspired by
