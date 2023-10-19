@@ -74,6 +74,7 @@ Documents produced by the working group will include the following:
 
 
 ## Inspiring Input Documents
+
 - SD-CWT - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/
     - may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
 - Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
