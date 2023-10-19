@@ -70,12 +70,13 @@ Documents produced by the working group will include the following:
     - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
 - Unlinkabilty of SD/VC with CWTs
 - Selective Disclosure with CWTs
-    - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/ may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
 - Identity Document serializations using JWT/CWT 
 
 
 ## Inspiring Input Documents
 
+- SD-CWT - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/
+    - may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
 - Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
 - Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
 - Unlinkable Selective Disclosure with BBS https://datatracker.ietf.org/doc/draft-irtf-cfrg-bbs-signatures/
