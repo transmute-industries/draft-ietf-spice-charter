@@ -65,9 +65,6 @@ The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retain
 Documents produced by the working group will include the following:
 
 - Architecture document
-    - addressing the desired properties of "Key Design Properties of Digital Credentials"
-    - commenting on JWT/CWT registries
-    - commenting on proof type (signatures, detecting duplicity, non equivocation, unlinkability, redactability)
 - Unlinkabilty of SD/VC with CWTs
 - Selective Disclosure with CWTs
 - Identity Document serializations using JWT/CWT 
