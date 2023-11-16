@@ -21,7 +21,7 @@ Examples of producing and consuming digital credentials with the "Three Role Mod
 
 ## Goals
 
-Coordination with CFRG, RATS, OAUTH, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
+Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
 
 ### In-Scope
 
@@ -68,28 +68,6 @@ Documents produced by the working group will include the following:
 - Unlinkabilty of SD/VC with CWTs
 - Selective Disclosure with CWTs
 - Identity Document serializations using JWT/CWT 
-
-
-## Inspiring Input Documents
-
-- SD-CWT - https://datatracker.ietf.org/doc/draft-prorock-cose-sd-cwt/
-    - may be used as a starting point for aligning selective disclosure with registered claim names between JWT and CWT.
-- Use case document https://datatracker.ietf.org/doc/draft-prorock-spice-use-cases/ 
-- Unlinkable Selective Disclosure with JWPs https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/
-- Unlinkable Selective Disclosure with BBS https://datatracker.ietf.org/doc/draft-irtf-cfrg-bbs-signatures/
-- Proofs of Inclusion / Consistency - https://datatracker.ietf.org/doc/draft-ietf-cose-merkle-tree-proofs/
-- Countersignatures - https://datatracker.ietf.org/doc/html/rfc9338
-- Identity Document specification inspired by
-    - KEYTRANS
-    - (JWK Thumbprint URI, jkt) https://datatracker.ietf.org/doc/rfc9278/ 
-    - (COSE Key Thumbprint URI, ckt) https://datatracker.ietf.org/doc/draft-ietf-cose-key-thumbprint/
-
-Based on conversations on OAUTH and SPICE lists, while the following items are currently adopted by OAUTH,
-they might become potential candidates to be moved to a SPICE WG, pending WG forming and consensus:
-
-- JWT and CWT Status List https://datatracker.ietf.org/doc/draft-looker-oauth-jwt-cwt-status-list/
-- SD-JWT-based Verifiable Credentials (SD-JWT VC) https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/
-
 
 ## Milestones
 
