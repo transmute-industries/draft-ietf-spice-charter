@@ -58,7 +58,7 @@ The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retain
 - Confidentiality (ensuring information is protected from unauthorized access)
 - Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
-- Usability and Feasibility ( The core operations must be easy to understand and use, and possible to integrate with existing platforms)
+- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
 - Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
 
 ## Work Items
