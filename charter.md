@@ -19,6 +19,18 @@ Digital credentials are identity documents with attributes (public or private cl
 
 Examples of producing and consuming digital credentials with the "Three Role Model" include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
 
+## Key Design Properties of Digital Credentials
+
+- Unlinkability (preventing tracking while proving attributes / capabilities)
+- Selective Disclosure (supporting user agency, data minimization, redaction)
+- Authenticity (ensuring information is trustworthy and can be authenticated)
+- Integrity (ensuring tampering with information is always evident)
+- Confidentiality (ensuring information is protected from unauthorized access)
+- Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
+- Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
+- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
+- Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
+
 ## Goals
 
 Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
@@ -49,30 +61,41 @@ The working group will NOT address transport protocols, such as those developed 
 The working group will NOT address specific credential use cases, such as "personal credentials" or "software supply chain".
 The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retaining semantic interchangeability is not in-scope. Newly registered claims will have broader applicability, to both JWT and CWT use cases.
 
-## Key Design Properties of Digital Credentials
-
-- Unlinkability (preventing tracking while proving attributes / capabilities)
-- Selective Disclosure (supporting user agency, data minimization, redaction)
-- Authenticity (ensuring information is trustworthy and can be authenticated)
-- Integrity (ensuring tampering with information is always evident)
-- Confidentiality (ensuring information is protected from unauthorized access)
-- Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
-- Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
-- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
-- Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
-
-## Work Items
+## Deliverables
 
 Documents produced by the working group will include the following:
 
-- Architecture document
-- Unlinkabilty of SD/VC with CWTs
-- Selective Disclosure with CWTs
-- Identity Document serializations using JWT/CWT 
+- Architecture
+  
+  This document will elaborate on the Issuer, Holder, and Verifier roles, 
+  the issuance, derivation/disclosure, and presentation activities, and the
+  extensibility and alignment considerstations for serialized digital credentials.
+
+  This addresses the problem of coordinating credential and identifier terminology
+  when working with JOSE and COSE.
+
+- Identity Documents
+
+  This document will elaborate on expressing and discoverying verification material,
+  associated with the identifiers and roles described in the architecture.
+
+  This addresses the problem of coordinating identifier, key discovery, 
+  and assurance terminology when working with JOSE and COSE.
+
+
+- Transparency Tokens
+
+  This document will elaborate on disclosing claims and statements with transparency,
+  addressing the problems of redaction, selective disclosure and data minimization,
+  as well as considerations regarding traceability, blinding, and tracking.
+
+  This would include work on SD-CWTs, unless the group decides to split that into a seperate document.
+  
+  This would include work on anonymous credentials with BBS / other techniques, 
+  unless the group decides to split that into a seperate document.
 
 ## Milestones
 
 - 10 2024 - Submit an informational architecture document to the IESG for publication
-- 06 2024 - Submit a document as a proposed standard covering selective disclosure with CWT to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering unlinkability with CWT to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering identity documents to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Transparency Tokens to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Identity Documents to the IESG for publication
