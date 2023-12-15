@@ -8,7 +8,7 @@ One example is fraud and counterfeiting prevention in cross-border trade documen
 These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
 
 In order to meet privacy, security, and sustainability objectives, digital credentials need to be designed with awareness of computation and storage constraints associated with their use cases.
-The SPICE WG focuses on a few explicit higher level objectives: unreliability enabling trustworthy exposition of minimal required information to prevent correlation and other attacks, selective disclosure enabling controlled exposition and a authorized subset of likability, a well-curated, concise claim vocabulary enabling cross-domain interchangeability via registration authorizes (i.e., IANA).
+The SPICE WG focuses on a few explicit higher level objectives: unlinkability enabling trustworthy exposition of minimal required information to prevent correlation and other attacks, selective disclosure enabling controlled exposition and a authorized subset of linkability, a well-curated, concise claim vocabulary enabling cross-domain interchangeability via registration authorizes (i.e., IANA).
 These objectives can be achieved by leveraging industry adopted standards and managing trade-offs between cutting-edge and well-established cryptography.
 
 As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properties are in support sustainable design.
