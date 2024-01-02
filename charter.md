@@ -5,10 +5,11 @@
 Digital credentials based on IETF standards have use cases ranging from personal credentials, such as drivers licenses and vaccination proofs, to business-to-business or business-to-government applications.
 One example is fraud and counterfeiting prevention in cross-border trade documents by protecting digital representations of mill test reports, bills of materials, bills of lading, or commercial invoices.
 
-These scenarios were addressed with registered claim names in JOSE and COSE, but resulting solution have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
+These scenarios were addressed with registered claim names in JOSE and COSE, but the resulting solutions have lead to fragmented approaches, where each working group rediscovers the essential architecture and conventions necessary for issuers to make claims about subjects.
 
 In order to meet privacy, security, and sustainability objectives, digital credentials need to be designed with awareness of computation and storage constraints associated with their use cases.
 The SPICE WG focuses on a few explicit higher level objectives: clear semantics, proof schemes supporting both traceability and unlinkability, data minimization and selective disclosure.
+
 These objectives can be achieved by leveraging industry adopted standards and managing trade-offs between cutting-edge and well-established cryptography.
 
 As a guiding principle for the SPICE WG, claims that work well in JSON must work well in CBOR, without loss of semantics. Compact expressions of claims consume less resources and expose less attack surface, these properties are in support sustainable design.
@@ -17,7 +18,17 @@ The SPICE WG will support digital credential formats leveraging existing IETF st
 
 Digital credentials are identity documents with attributes (public or private claims in IANA registries) about the identity. The identifiers referenced could be about any subject, but common examples include people, devices, assets, organizations and processes.
 
-Examples of producing and consuming digital credentials with the "Three Role Model" include credential endorsement by third parties, credential trustworthiness via remote attestation evidence appraisal for issuers, or credential transparency via notarization.
+## Background
+
+The IETF has standardized the Web Authorization (OAuth) protocol to allow a user to grant a third-party web site or application access to the user's protected resources, without necessarily revealing their long-term credentials, or even their identity. The JSON Web Token (JWT) was an important building block that standardized the token format. OAuth also offered fine-grained access to resources based on the resource owner's permissions, which are encoded inside the access token. OAuth and JWTs were re-used by the OpenID Foundation as building blocks for standardizing identity management protocols.
+
+Since OAuth was heavily focused on the HTTP-based web, it required adaptations for use in constrainted Internet of Things environments by using an efficient binary encoding based on CBOR, CBOR Object Signing and Encryption (COSE), and protocols commonly used in those environments, such as MQTT and CoAP. This standardization work was completed in the IETF ACE working group. With the CBOR Web Token (CWT) an alternative token format was developed, which like the JWT, also relied on an IANA-based registry for claims. Advanced privacy features were not considered a high priority in those IoT scenarios, which focused on machine-to-machine communication rather than interactions with humans.
+
+During the last few years there has been renewed interest in privacy-enhancing technologies for identity management systems that utilize technologies offering selective disclosure, data minimization and unlinkability. Foundational building blocks have been developed with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, and Selective-Disclosure techniques. These technologies have subsequently been incorporated into JOSE and OAuth-based protocols. The integration into protocols using CWTs is, however, missing. This working group aims to close this gap by enabling the secure and privacy-friendly use of CWT-based credentials for use cases that go beyond constrained Internet of Things devices. Envisioned use cases where these credentials will be used include education, digital wallets, business-to-business supply chain interactions, and digital media.
+
+### A note on terminology
+
+The term "digital credential" is a generic industry term, which does not imply a specific serialization. The term "verifiable credential" is a term which implies JSON serialization, and in the W3C, specific JSON-LD based media types. As this question is frequently asked, a "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation, and a "digital credential" is an "OAUTH Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAUTH WG. We avoid the term "verifiable credential" in this charter text, as we are not intending to draw exlcusive association to these existing serializations.
 
 ## Key Design Properties of Digital Credentials
 
@@ -65,37 +76,14 @@ The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retain
 
 Documents produced by the working group will include the following:
 
-- Architecture
-  
-  This document will elaborate on the Issuer, Holder, and Verifier roles, 
-  the issuance, derivation/disclosure, and presentation activities, and the
-  extensibility and alignment considerstations for serialized digital credentials.
+- An architecture document that defines the terminology (e.g., Issuer, Holder, and Verifier), the communication patterns between these parties, and the security/privacy properties.
 
-  This addresses the problem of coordinating credential and identifier terminology
-  when working with JOSE and COSE.
+- A key discovery document focusing on the scalable, Internet-wide discovery of keys and meta-data.
 
-- Identity Documents
-
-  This document will elaborate on expressing and discoverying verification material,
-  associated with the identifiers and roles described in the architecture.
-
-  This addresses the problem of coordinating identifier, key discovery, 
-  and assurance terminology when working with JOSE and COSE.
-
-
-- Transparency Tokens
-
-  This document will elaborate on disclosing claims and statements with transparency,
-  addressing the problems of redaction, selective disclosure and data minimization,
-  as well as considerations regarding traceability, blinding, and tracking.
-
-  This would include work on SD-CWTs, unless the group decides to split that into a seperate document.
-  
-  This would include work on anonymous credentials with BBS / other techniques, 
-  unless the group decides to split that into a seperate document.
+- A document specifying the disclosure of claims in a secure and privacy-friendly manner.
 
 ## Milestones
 
-- 10 2024 - Submit an informational architecture document to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering Transparency Tokens to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering Identity Documents to the IESG for publication
+- 10 2024 - Submit an informational Architecture document to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Key Discovery to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Claims Disclosure to the IESG for publication
