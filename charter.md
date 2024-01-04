@@ -74,12 +74,12 @@ Documents produced by the working group will include the following:
 
 - An architecture document that defines the terminology (e.g., Issuer, Holder, and Verifier), the communication patterns between these parties, and the security/privacy properties.
 
-- A meta-data discovery document focusing on the scalable, Internet-wide discovery of keys and meta-data for issuers and verifiers.
+- A meta-data discovery document focusing on the scalable, Internet-wide discovery of keys, credential formats and meta-data for issuers, holders and verifiers.
 
 - A document specifying the disclosure of claims in a secure and privacy-friendly manner.
 
 ## Milestones
 
 - 10 2024 - Submit an informational Architecture document to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering Key Discovery to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
 - 02 2025 - Submit a document as a proposed standard covering Claims Disclosure to the IESG for publication
