@@ -20,11 +20,29 @@ Digital credentials are identity documents with attributes (public or private cl
 
 ## Background
 
-During the last few years there has been renewed interest in privacy-enhancing technologies for identity management systems that utilize technologies offering selective disclosure, data minimization and unlinkability. Foundational building blocks have been developed with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, and Selective-Disclosure techniques. These technologies have subsequently been incorporated into JOSE and OAuth-based protocols. The integration into protocols using CWTs is, however, missing. This working group aims to close this gap by enabling the secure and privacy-friendly use of CWT-based credentials for use cases that go beyond constrained Internet of Things devices. Envisioned use cases where these credentials will be used include education, digital wallets, business-to-business supply chain interactions, and digital media.
+During the last few years there has been renewed interest in privacy-enhancing technologies for identity management systems that utilize technologies offering selective disclosure, data minimization and unlinkability.
+
+Foundational building blocks have been developed with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, and Selective-Disclosure techniques. 
+
+These technologies have subsequently been incorporated into JOSE and OAuth-based protocols. The integration into protocols using CWTs is, however, missing. 
+
+This working group aims to close this gap by enabling the secure and privacy-friendly use of CWT-based credentials for use cases that go beyond constrained Internet of Things devices. 
+
+Envisioned use cases where these credentials will be used include education, digital wallets, business-to-business supply chain interactions, and digital media.
 
 ### A note on terminology
 
-The term "digital credential" is a generic industry term, which does not imply a specific serialization. The term "verifiable credential" is a term which implies JSON serialization, and in the W3C, specific JSON-LD based media types. As this question is frequently asked, a "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation, and a "digital credential" is an "OAUTH Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAUTH WG. We avoid the term "verifiable credential" in this charter text, as we are not intending to draw exlcusive association to these existing serializations.
+The term "digital credential" is a generic industry term, which does not imply a specific serialization. 
+
+The term "verifiable credential" is a term which can imply JSON, JSON-LD or mDoc serialization, and in the W3C, "verifiable credential" implies specific JSON-LD based media types.
+
+As this question is frequently asked, a "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
+
+A "digital credential" is an "OAUTH Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAUTH WG. 
+
+A "digital credential" might be a "mDoc verifiable credential", in other specifications.
+
+We avoid the term "verifiable credential" in this charter text, as we are not intending to draw exclusive association to these existing serializations.
 
 ## Key Design Properties of Digital Credentials
 
