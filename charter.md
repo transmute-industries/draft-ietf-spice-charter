@@ -78,7 +78,7 @@ Documents produced by the working group will include the following:
 
 - An architecture document that defines the terminology (e.g., Issuer, Holder, and Verifier), the communication patterns between these parties, and the security/privacy properties.
 
-- A key discovery document focusing on the scalable, Internet-wide discovery of keys and meta-data.
+- A meta-data discovery document focusing on the scalable, Internet-wide discovery of keys and meta-data for issuers and verifiers.
 
 - A document specifying the disclosure of claims in a secure and privacy-friendly manner.
 
