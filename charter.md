@@ -24,7 +24,7 @@ In the W3C, "verifiable credential" implies specific JSON-LD based media types.
 
 A "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
 
-A "digital credential" is an "OAUTH Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAUTH WG. 
+A "digital credential" is an "OAuth Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAuth WG. 
 
 A "digital credential" might be a "mDoc verifiable credential", in other specifications.
 
