@@ -10,7 +10,7 @@ SPICE aligns the capabilities of JOSE and COSE to support modern cryptographic c
 
 ## Background
 
-Foundational building blocks have been developed with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, or other Selective-Disclosure and data minimization techniques.
+IETF and IRTF working groups have developed foundational building blocks with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, or other Selective-Disclosure and data minimization techniques.
 While these techniques are being incorporated into JOSE and OAuth-based protocols, the integration into protocols using CBOR/COSE is, however, missing. 
 The SPICE WG aims to close this gap by enabling the secure and privacy-friendly use of CBOR-based credentials for use cases that go beyond constrained Internet of Things devices. Envisioned use cases where these credentials will be used include education, digital wallets, business-to-business supply chain interactions, and digital media.
 
