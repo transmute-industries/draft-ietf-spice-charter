@@ -3,7 +3,7 @@
 ## Introduction
 
 Digital credentials are essential to identity, access control, and digitization use cases that are part of modernization efforts, such as digital licenses or certificates of origin.
-COSE and JOSE provide building blocks, such as identifiers and public and private claim structures, which enable interoperability and cryptographic agility, but which require profiling to render digitization easy, unambiguous and consistent.
+IETF WGs and IRTF RGs have provided COSE and JOSE based building blocks.  Things like identifiers, claim structures, and confidentiality for personally identified information enable interoperability and cryptographic agility, however, they have required profiling in order to render digitization easy, unambiguous and consistent.
 The many ways to combine identifiers, key material, signatures, and attributes to create credentials, often prevents interoperabtility from spanning across data silos or cross use cases.
 This lack of interoperabilty leads to increased implementation costs, attack surface, and harms adoption, which prevents digitization from being deployed successfully.
 SPICE aligns the capabilities of JOSE and COSE to support modern cryptographic capabilities, such as selective disclosure or unlinkablilty, consistent identity attribute semantics across representations, and Internet-scale discoverability of identifiers and cryptography capabilities.
