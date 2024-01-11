@@ -16,27 +16,31 @@ The SPICE WG aims to close this gap by enabling the secure and privacy-friendly 
 
 ### A note on terminology (Note: context to be removed from charter upon adoption)
 
-The term "digital credential" is a generic industry term, which does not imply a specific serialization. 
+The terms "digital credential", and "digital presentation" are a generic industry terms, which do not imply a specific serialization. 
 
-The term "verifiable credential" is a term which can imply, for example, JSON, JSON-LD or mDoc serialization.
+The terms "verifiable credential", and "verifiable presentation" are terms which can imply, for example, JSON, JSON-LD or mDoc serialization.
 
-In the W3C, "verifiable credential" implies specific JSON-LD based media types.
+In the W3C, "verifiable credential", and "verifiable presentation" imply specific JSON-LD based media types.
 
 A "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
+A "digital presentation" is a "W3C Verifiable Presentation" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
 
 A "digital credential" is an "OAuth Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAuth WG. 
+A "digital presentation" is an "OAuth Verifiable Presentation" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAuth WG. 
 
 A "digital credential" might be a "mDoc verifiable credential", in other specifications.
+A "digital presentation" might be a "mDoc verifiable presentation", in other specifications.
 
-As a result, the SPICE WG avoids use the term "verifiable credential" in this charter text, as it is not intended to draw exclusive association to these existing serializations.
+As a result, the SPICE WG avoids using the terms "verifiable credential" and "verifiable presentation" in this charter text, as it is not intended to draw exclusive association to these existing serializations.
 
-## Key Design Properties of Digital Credentials
+## Key Design Properties of Digital Credentials & Presentations
 
 - Unlinkability (preventing tracking while proving attributes / capabilities)
 - Selective Disclosure (supporting user agency, data minimization, redaction)
 - Authenticity (ensuring information is trustworthy and can be authenticated)
 - Integrity (ensuring tampering with information is always evident)
 - Confidentiality (ensuring information is protected from unauthorized access)
+- Hardware Assurance (awareness of the security capabilities of issuers, holders and verifiers)
 - Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
 - Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
@@ -44,15 +48,15 @@ As a result, the SPICE WG avoids use the term "verifiable credential" in this ch
 
 ## Goals
 
-Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements needed to support existing credential use cases.
+Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as TCG, CCC, ISO or W3C, on data model elements needed to support existing credential use cases.
 
 ### In-Scope
 
-The work of the SPICE WG aligns JWT and CWT registered claim names for use with the 'Three Role Model' as introduced by W3C's 'Verifiable Credentials Data Model v2.0' specification (https://w3c.github.io/vc-data-model/#roles).
+The work of the SPICE WG aligns JWT and CWT registered claim names for use with the 'Three Role Model' as introduced by [W3C's 'Verifiable Credentials Data Model v2.0' specification](https://w3c.github.io/vc-data-model/#roles).
 
 The SPICE WG will develop a framework in support of the 'Three Role Model', selective disclosure, and unlinkability.
-The framework will provide an architecture that enables consistent application of JOSE and COSE, similar to the work done in https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21#name-eat-as-a-framework and https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof.
-The intent is also to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification (https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically CWT Claim Sets, or other CBOR data structures.
+The framework will provide an architecture that enables consistent application of JOSE and COSE, similar to the work done in [EAT as a Framework](https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21#name-eat-as-a-framework) and [JSON Web Proofs](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof).
+The intent is also to apply lessons learned from the development of [W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification](https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically CWT Claim Sets, or other CBOR data structures.
 
 A short list of lessons learned:
 1. Expressive data models, such as RDF, are not necessarily suitable for
