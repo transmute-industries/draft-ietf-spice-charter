@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Digital credentials are essential to identity, access control, and digitization use cases that are part of modernization efforts, such as digital licenses or certificates of origin.
+Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, transparency, such as digital licenses or certificates of origin.
 IETF WGs and IRTF RGs have provided COSE and JOSE based building blocks.  Things like identifiers, claim structures, and confidentiality for personally identified information enable interoperability and cryptographic agility, however, they have required profiling in order to render digitization easy, unambiguous and consistent.
 The many ways to combine identifiers, key material, signatures, and attributes to create credentials, often prevents interoperabtility from spanning across data silos or cross use cases.
 This lack of interoperabilty leads to increased implementation costs, attack surface, and harms adoption, which prevents digitization from being deployed successfully.
