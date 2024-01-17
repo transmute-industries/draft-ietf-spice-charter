@@ -2,92 +2,82 @@
 
 ## Introduction
 
-Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, transparency, such as digital licenses or certificates of origin.
-IETF WGs and IRTF RGs have provided COSE and JOSE based building blocks.  Things like identifiers, claim structures, and confidentiality for personally identified information enable interoperability and cryptographic agility, however, they have required profiling in order to render digitization easy, unambiguous and consistent.
-The many ways to combine identifiers, key material, signatures, and attributes to create credentials, often prevents interoperabtility from spanning across data silos or cross use cases.
-This lack of interoperabilty leads to increased implementation costs, attack surface, and harms adoption, which prevents digitization from being deployed successfully.
-SPICE aligns the capabilities of JOSE and COSE to support modern cryptographic capabilities, such as selective disclosure or unlinkablilty, consistent identity attribute semantics across representations, and Internet-scale discoverability of identifiers and cryptography capabilities.
+Digital credentials may be thought as digital equivalents of paper-based passports, driver's licenses, membership certificates or proofs of qualification attached to a person.
+These types of credentials usually contain personal data such as a family name, first names, a gender, a birth date, an home address, a phone number, a face picture
+or minutiae points for fingerprints.
+
+In some contexts, persons may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values.
+When received by an entity, a proof of ownership of the digital credential needs to be provided and verified, so that only the legitimate owner of the digital credential can take an advantage of its possession. The use of Trusted Applications (TAs) supported by a Trusted Execution Environment (TEE) is essential in order to provide a proof of ownership of a digital credential.
+Some persons may wish to carry more that one credential. These credentials, together with associated key material, can be stored in an identity digital wallet.
 
 ## Background
 
-IETF and IRTF working groups have developed foundational building blocks with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions, or other Selective-Disclosure and data minimization techniques.
-While these techniques are being incorporated into JOSE and OAuth-based protocols, the integration into protocols using CBOR/COSE is, however, missing. 
-The SPICE WG aims to close this gap by enabling the secure and privacy-friendly use of CBOR-based credentials for use cases that go beyond constrained Internet of Things devices. Envisioned use cases where these credentials will be used include education, digital wallets, business-to-business supply chain interactions, and digital media.
+W3C has introduced a 'Three Role Model' in the 'Verifiable Credentials Data Model v2.0' specification. VCDM 2.0 (https://w3c.github.io/vc-data-model)
+with the following roles: a holder, an issuer and a verifier.
 
-### A note on terminology (Note: context to be removed from charter upon adoption)
+The wording "Verifiable Credential" (VC) is used in VCDM 2.0. It implies the use of a schema defined using JSON-LD.
+The wording "Verifiable Presentation" (VP) is used in VCDM 2.0. It implies the use of data serialization using JSON-LD.
 
-The terms "digital credential", and "digital presentation" are a generic industry terms, which do not imply a specific serialization. 
+In this charter, the VC concept is captured using the wording "digital credential", while the VP concept is captured using the wording "digital presentation".
 
-The terms "verifiable credential", and "verifiable presentation" are terms which can imply, for example, JSON, JSON-LD or mDoc serialization.
+Some sets of claim names have been defined by the IANA and originate both from the IETF and the OIDF.
+The W3C has taken a different approach allowing to define any kind of claim names by referencing URNs using LD-JSON schemas that include the @context property.
 
-In the W3C, "verifiable credential", and "verifiable presentation" imply specific JSON-LD based media types.
+IETF and IRTF working groups have developed foundational building blocks with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions,
+or other Selective-Disclosure and collection limitation techniques.
 
-A "digital credential" is a "W3C Verifiable Credential" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
-A "digital presentation" is a "W3C Verifiable Presentation" when it secures a JSON claimset that conforms to the W3C Technical Recommendation.
+## Key Design Properties of Digital Credentials
 
-A "digital credential" is an "OAuth Verifiable Credential" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAuth WG. 
-A "digital presentation" is an "OAuth Verifiable Presentation" when it secures a JSON claimset that conforms to the requirements of documents developed by the OAuth WG. 
-
-A "digital credential" might be a "mDoc verifiable credential", in other specifications.
-A "digital presentation" might be a "mDoc verifiable presentation", in other specifications.
-
-As a result, the SPICE WG avoids using the terms "verifiable credential" and "verifiable presentation" in this charter text, as it is not intended to draw exclusive association to these existing serializations.
-
-## Key Design Properties of Digital Credentials & Presentations
-
-- Unlinkability (preventing tracking while proving attributes / capabilities)
-- Selective Disclosure (supporting user agency, data minimization, redaction)
-- Authenticity (ensuring information is trustworthy and can be authenticated)
+- Request and issuance of digital credentials
+- Request and renewal of digital credentials
+- Revocation request and checking of the revocation state of a digital credential
+- Unlinkability of digital presentations (preventing tracking between verifiers while proving attributes / capabilities)
+- Selective Disclosure of claims (supporting collection limitation and attribute redaction)
+- Zero Knowledge Proofs (demonstrating some properties about some attributes without disclosing their values)
+- Proof of ownership of a digital presentation (using a TA running in a TEE)
+- Detection or prevention of holders collaborative attacks
+- Authenticity (ensuring that the issuer of a digital credential can be either individually authenticated or authenticated as a member of a set of trusted issuers)
 - Integrity (ensuring tampering with information is always evident)
-- Confidentiality (ensuring information is protected from unauthorized access)
-- Hardware Assurance (awareness of the security capabilities of issuers, holders and verifiers)
-- Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
-- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
-- Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
+- Usability (the core operations must be easy to understand and use)
 
 ## Goals
 
-Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged. Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as TCG, CCC, ISO or W3C, on data model elements needed to support existing credential use cases.
+Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged.
+Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work s
+pread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C,
+on data model elements or protocols needed to support existing credential use cases.
 
-### In-Scope
+## In-Scope
 
-The work of the SPICE WG aligns JWT and CWT registered claim names for use with the 'Three Role Model' as introduced by [W3C's 'Verifiable Credentials Data Model v2.0' specification](https://w3c.github.io/vc-data-model/#roles).
+The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes
+and unlinkability between verifiers. It will consider the use of TEEs (Trusted Execution Environments) for managing key material and digital credentials.
 
-The SPICE WG will develop a framework in support of the 'Three Role Model', selective disclosure, and unlinkability.
-The framework will provide an architecture that enables consistent application of JOSE and COSE, similar to the work done in [EAT as a Framework](https://datatracker.ietf.org/doc/html/draft-ietf-rats-eat-21#name-eat-as-a-framework) and [JSON Web Proofs](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof).
-The intent is also to apply lessons learned from the development of [W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification](https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically CWT Claim Sets, or other CBOR data structures.
+The intent is to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification
+(https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically JOSE or other CBOR data structures.
 
 A short list of lessons learned:
-1. Expressive data models, such as RDF, are not necessarily suitable for
-   all use-cases outside W3C
-2. Reusing existing semantics that fit the domain well, such as provided by
-   the JWT/CWT Claims registry, provide can improve interoperability,
-   significantly
-3. Focussing on crisp technical specifications and producing separate
-   informative guidance documents helps to keep technical interested parties
-   involved
-4. Compact encoding matters and aligning JSON and CBOR provides
-   the basis for simpler interoperability and smaller specification
 
-### Out-of-Scope
+1.    Expressive data models, such as RDF, are not necessarily suitable for all use-cases outside W3C
+1.    Reusing existing semantics that fit the domain well, such as provided by the IANA registry, provide can improve interoperability, significantly
+1.    Focussing on crisp technical specifications and producing separate informative guidance documents helps to keep technical interested parties involved
+1.    Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller specification
 
-The working group will NOT address transport protocols, such as those developed at OAUTH, OIDF, W3C or ISO in the scope of its initial charter.
-The working group will NOT address specific credential use cases, such as "personal credentials" or "software supply chain".
-The SPICE WG's work items will not require nor forbid the use of JSON-LD. Retaining semantic interchangeability is not in-scope. Newly registered claims will have broader applicability, to both JWT and CWT use cases.
+## Out-of-Scope
+
+The working group will NOT address specific credential use cases, such as "software supply chain".
+Retaining semantic interchangeability is not in-scope.
 
 ## Deliverables
 
 Documents produced by the working group will include the following:
 
 - An architecture document that defines the terminology (e.g., Issuer, Holder, and Verifier), the communication patterns between these parties, and the security/privacy properties.
+- A meta-data discovery document enabling holders and verifiers to discover supported protocols and formats for keys, claims, credentials and proofs.
+- A document specifying the selective disclosure of claims in a secure and privacy-friendly manner.
 
-- A meta-data discovery document enabling issuers, holders and verifiers to discover supported protocols and formats for keys, claims, credentials and proofs.
-
-- A document specifying the disclosure of claims in a secure and privacy-friendly manner.
-
-## Milestones
+Milestones
 
 - 10 2024 - Submit an informational Architecture document to the IESG for publication
 - 02 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
-- 02 2025 - Submit a document as a proposed standard covering Claims Disclosure to the IESG for publication
+- 02 2025 - Submit a document as a proposed standard covering Selective Disclosure of Claims to the IESG for publication
