@@ -58,10 +58,10 @@ The intent is to apply lessons learned from the development of W3C's 'Securing V
 
 A short list of lessons learned:
 
-1.    Expressive data models, such as RDF, are not necessarily suitable for all use-cases outside W3C
-1.    Reusing existing semantics that fit the domain well, such as provided by the IANA registry, provide can improve interoperability, significantly
-1.    Focussing on crisp technical specifications and producing separate informative guidance documents helps to keep technical interested parties involved
-1.    Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller specification
+1. Expressive data models, such as RDF, are not necessarily suitable for all use-cases outside W3C
+1. Reusing existing semantics that fit the domain well, such as provided by the IANA registry, provide can improve interoperability, significantly
+1. Focussing on crisp technical specifications and producing separate informative guidance documents helps to keep technical interested parties involved
+1. Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller specification
 
 ## Out-of-Scope
 
