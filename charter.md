@@ -33,11 +33,9 @@ or other Selective-Disclosure and collection limitation techniques.
 - Hardware Assurance (awareness of the security capabilities of issuers, holders and verifiers)
 - Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
-- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
 - Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
 - Integrity (ensuring tampering with information is always evident)
-- Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
-- Usability (the core operations must be easy to understand and use)
+- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
 
 ## Goals
 
