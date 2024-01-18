@@ -59,7 +59,6 @@ A short list of lessons learned:
 
 ## Out-of-Scope
 
-The working group will NOT address specific credential use cases, such as "software supply chain".
 Retaining semantic interchangeability is not in-scope.
 
 ## Deliverables
