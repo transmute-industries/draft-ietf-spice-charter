@@ -2,10 +2,11 @@
 
 ## Introduction
 
-Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, transparency, such as digital licenses or certificates of origin.
+Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, and transparency, such as digital licenses or certificates of origin.
 
 In some contexts, holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values.
-When received by an entity, a proof of the digital credential needs to be provided and verified, so that only the legitimate controller of the digital credential can take an advantage of its possession. The use of Trusted Applications (TAs) supported by a Trusted Execution Environment (TEE) may be essential for some use cases in order to provide a proof of control of a digital credential
+When received by an entity, a proof of the digital credential needs to be provided and verified, so that only the legitimate controller of the digital credential can take an advantage of its possession. 
+The use of Trusted Applications (TAs) supported by a Trusted Execution Environment (TEE) may be essential for some use cases in order to provide a proof of control of a digital credential.
 Some holders may wish to carry more than one credential. These credentials, together with associated key material, can be stored in a identity digital wallet.
 
 ## Background
@@ -13,12 +14,12 @@ Some holders may wish to carry more than one credential. These credentials, toge
 W3C has introduced a 'Three Role Model' in the 'Verifiable Credentials Data Model v2.0' specification. VCDM 2.0 (https://w3c.github.io/vc-data-model)
 with the following roles: a holder, an issuer and a verifier.
 
-The wording "Verifiable Credential" (VC) is used in VCDM 2.0. It implies the use of a schema defined using JSON-LD.
+The wording "Verifiable Credential" (VC) is used in VCDM 2.0. It implies the use of data serialization using JSON-LD.
 The wording "Verifiable Presentation" (VP) is used in VCDM 2.0. It implies the use of data serialization using JSON-LD.
 
 In this charter, the VC concept is captured using the wording "digital credential", while the VP concept is captured using the wording "digital presentation".
 
-Some sets of claim names have been defined by the IANA and originate both from the IETF and the OIDF.
+Some sets of claim names are registered with IANA and originate from the IETF, OIDF and other standards organizations.
 
 IETF and IRTF working groups have developed foundational building blocks with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions,
 or other Selective-Disclosure and collection limitation techniques.
@@ -45,7 +46,8 @@ Feedback from experts in other IETF working groups is gathered in the SPICE WG w
 
 ## In-Scope
 
-The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes and unlinkability between verifiers. It will consider the use of TEEs (Trusted Execution Environments) for managing key material and digital credentials.
+The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes and unlinkability between verifiers. 
+The SPICE WG will consider the use of TEEs (Trusted Execution Environments) for managing key material and digital credentials.
 
 The intent is to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification
 (https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically JOSE or other CBOR data structures.
@@ -53,10 +55,9 @@ The intent is to apply lessons learned from the development of W3C's 'Securing V
 A short list of lessons learned:
 
 1. Expressive data models, such as RDF, are not necessarily suitable for all use-cases outside W3C
-1. Reusing existing semantics that fit the domain well, such as provided by the IANA registry, provide can improve interoperability, significantly
+1. Reusing existing semantics that fit the domain well, such as provided by the IANA registry, can improve interoperability
 1. Focussing on crisp technical specifications and producing separate informative guidance documents helps to keep technical interested parties involved
-1. Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller specification
-
+1. Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller credentials
 
 ## Deliverables
 
