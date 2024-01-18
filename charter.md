@@ -6,7 +6,7 @@ Digital credentials are essential to identity, authorization, licenses, certific
 
 In some contexts, holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values.
 When received by an entity, a proof of the digital credential needs to be provided and verified, so that only the legitimate controller of the digital credential can take an advantage of its possession. The use of Trusted Applications (TAs) supported by a Trusted Execution Environment (TEE) is essential in order to provide a proof of control of a digital credential.
-Some persons may wish to carry more that one credential. These credentials, together with associated key material, can be stored in an identity digital wallet.
+Some holders may wish to carry more than one credential. These credentials, together with associated key material, can be stored in a identity digital wallet.
 
 ## Background
 
