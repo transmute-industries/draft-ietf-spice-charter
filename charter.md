@@ -2,9 +2,7 @@
 
 ## Introduction
 
-Digital credentials may be thought as digital equivalents of paper-based passports, driver's licenses, membership certificates or proofs of qualification attached to a person.
-These types of credentials usually contain personal data such as a family name, first names, a gender, a birth date, an home address, a phone number, a face picture
-or minutiae points for fingerprints.
+Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, transparency, such as digital licenses or certificates of origin.
 
 In some contexts, persons may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values.
 When received by an entity, a proof of ownership of the digital credential needs to be provided and verified, so that only the legitimate owner of the digital credential can take an advantage of its possession. The use of Trusted Applications (TAs) supported by a Trusted Execution Environment (TEE) is essential in order to provide a proof of ownership of a digital credential.
