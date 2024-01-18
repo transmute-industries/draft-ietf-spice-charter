@@ -19,7 +19,6 @@ The wording "Verifiable Presentation" (VP) is used in VCDM 2.0. It implies the u
 In this charter, the VC concept is captured using the wording "digital credential", while the VP concept is captured using the wording "digital presentation".
 
 Some sets of claim names have been defined by the IANA and originate both from the IETF and the OIDF.
-The W3C has taken a different approach allowing to define any kind of claim names by referencing URNs using LD-JSON schemas that include the @context property.
 
 IETF and IRTF working groups have developed foundational building blocks with BBS Signatures, RSA Blind Signatures, Verifiable Random Functions,
 or other Selective-Disclosure and collection limitation techniques.
