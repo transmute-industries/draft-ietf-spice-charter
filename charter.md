@@ -57,9 +57,6 @@ A short list of lessons learned:
 1. Focussing on crisp technical specifications and producing separate informative guidance documents helps to keep technical interested parties involved
 1. Compact encoding matters and aligning JSON and CBOR may provide the basis for simpler interoperability and smaller specification
 
-## Out-of-Scope
-
-Retaining semantic interchangeability is not in-scope.
 
 ## Deliverables
 
