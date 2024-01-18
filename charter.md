@@ -63,7 +63,7 @@ A short list of lessons learned:
 Documents produced by the working group will include the following:
 
 - An architecture document that defines the terminology (e.g., Issuer, Holder, and Verifier), the communication patterns between these parties, and the security/privacy properties.
-- A meta-data discovery document enabling holders and verifiers to discover supported protocols and formats for keys, claims, credentials and proofs.
+- A meta-data discovery document enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs.
 - A document specifying the selective disclosure of claims in a secure and privacy-friendly manner.
 
 ## Milestones
