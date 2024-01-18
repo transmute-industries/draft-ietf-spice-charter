@@ -25,15 +25,15 @@ or other Selective-Disclosure and collection limitation techniques.
 
 ## Key Design Properties of Digital Credentials
 
-- Request and issuance of digital credentials
-- Request and renewal of digital credentials
-- Revocation request and checking of the revocation state of a digital credential
-- Unlinkability of digital presentations (preventing tracking between verifiers while proving attributes / capabilities)
-- Selective Disclosure of claims (supporting collection limitation and attribute redaction)
-- Zero Knowledge Proofs (demonstrating some properties about some attributes without disclosing their values)
-- Proof of ownership of a digital presentation (using a TA running in a TEE)
-- Detection or prevention of holders collaborative attacks
-- Authenticity (ensuring that the issuer of a digital credential can be either individually authenticated or authenticated as a member of a set of trusted issuers)
+- Unlinkability (preventing tracking while proving attributes / capabilities)
+- Selective Disclosure (supporting user agency, data minimization, redaction)
+- Authenticity (ensuring information is trustworthy and can be authenticated)
+- Confidentiality (ensuring information is protected from unauthorized access)
+- Hardware Assurance (awareness of the security capabilities of issuers, holders and verifiers)
+- Availability (efficiently information processing, minimizing data in flight, reducing carbon cost for storage and transmission, and supporting offline / paper credential use cases)
+- Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
+- Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
+- Accountability (what format and protocol considerations can help mitigate abusive or excessive requests for credential presentation?  What mitigates abuse by issuers?)
 - Integrity (ensuring tampering with information is always evident)
 - Semantic interchangeability (ensuring terms are understood and used consistently, in a global or local context)
 - Usability (the core operations must be easy to understand and use)
