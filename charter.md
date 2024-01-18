@@ -37,12 +37,6 @@ or other Selective-Disclosure and collection limitation techniques.
 - Integrity (ensuring tampering with information is always evident)
 - Usability and Feasibility (the core operations must be easy to understand and use, and possible to integrate with existing platforms)
 
-## Goals
-
-Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged.
-Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. 
-Additionally, the SPICE WG will coordinate with other organizations, such as TCG, CCC, ISO or W3C, on data model elements or protocols needed to support credential use cases.
-
 ## In-Scope
 
 The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes and unlinkability between verifiers. 
@@ -71,3 +65,10 @@ Documents produced by the working group will include the following:
 - 10 2024 - Submit an informational Architecture document to the IESG for publication
 - 02 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
 - 02 2025 - Submit a document as a proposed standard covering Selective Disclosure of Claims to the IESG for publication
+  
+## Coordination
+
+Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged.
+Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. 
+Additionally, the SPICE WG will coordinate with other organizations, such as TCG, CCC, ISO or W3C, on data model elements or protocols needed to support credential use cases.
+
