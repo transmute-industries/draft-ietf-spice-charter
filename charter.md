@@ -42,7 +42,8 @@ or other Selective-Disclosure and collection limitation techniques.
 ## Goals
 
 Coordination with CFRG, RATS, OAuth, JOSE, COSE, and SCITT are important to ensure that the latest work at IETF is leveraged.
-Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. Additionally, the SPICE WG will coordinate with other SDOs, such as ISO or W3C, on data model elements or protocols needed to support existing credential use cases.
+Feedback from experts in other IETF working groups is gathered in the SPICE WG without creating fragments of credential work spread across several existing places in the IETF. 
+Additionally, the SPICE WG will coordinate with other organizations, such as TCG, CCC, ISO or W3C, on data model elements or protocols needed to support credential use cases.
 
 ## In-Scope
 
