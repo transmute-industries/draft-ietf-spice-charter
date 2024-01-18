@@ -66,7 +66,7 @@ Documents produced by the working group will include the following:
 - A meta-data discovery document enabling holders and verifiers to discover supported protocols and formats for keys, claims, credentials and proofs.
 - A document specifying the selective disclosure of claims in a secure and privacy-friendly manner.
 
-Milestones
+## Milestones
 
 - 10 2024 - Submit an informational Architecture document to the IESG for publication
 - 02 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
