@@ -45,8 +45,7 @@ Feedback from experts in other IETF working groups is gathered in the SPICE WG w
 
 ## In-Scope
 
-The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes
-and unlinkability between verifiers. It will consider the use of TEEs (Trusted Execution Environments) for managing key material and digital credentials.
+The SPICE WG will develop a framework in support of the 'Three Role Model', considering in particular selective disclosure of attributes and unlinkability between verifiers. It will consider the use of TEEs (Trusted Execution Environments) for managing key material and digital credentials.
 
 The intent is to apply lessons learned from the development of W3C's 'Securing Verifiable Credentials using JOSE and COSE' specification
 (https://www.w3.org/TR/vc-jose-cose), and extend them to non JSON-LD based payloads, specifically JOSE or other CBOR data structures.
