@@ -4,7 +4,7 @@
 
 Digital credentials are essential to identity, authorization, licenses, certificates and digitization use cases that are part of modernization efforts targeting efficiency, and transparency, such as digital licenses or certificates of origin.
 
-A digitial credential expresses claims or attributes about a subject, such as their name or age, made my an authority known as an issuer, such as a government agency.
+A digital credential expresses claims or attributes about a subject, such as their name or age, made my an authority known as an issuer, such as a government agency.
 
 The term "holder" is used to describe an entity that controls disclosure of credentials.
 
