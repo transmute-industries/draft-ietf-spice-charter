@@ -6,7 +6,7 @@ Digital credentials are essential to identity, authorization, licenses, certific
 
 A digital credential expresses claims or attributes about a subject, such as their name or age, made my an authority known as an issuer, such as a government agency.
 
-The term "holder" is used to describe an entity that controls disclosure of credentials.
+The term "holder" is used to describe an entity (person, device, organization, or software agent) that controls disclosure of credentials.
 
 In some contexts, holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values.
 
