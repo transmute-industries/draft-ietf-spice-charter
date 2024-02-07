@@ -6,9 +6,7 @@ Digital credentials are essential to identity, authorization, licenses, certific
 A digital credential expresses claims or attributes about a subject, such as their name or age, and their cryptographic keys.  Some sets of claim names have already been defined by the IETF and other standards development groups (e.g., OpenID Foundation).  Digital credentials typically involve at least three entities:
 
 - An "issuer", an entity (person, device, organization, or software agent) that constructs and secures digital credentials.
-
 - A "holder", an entity (person, device, organization, or software agent) that controls the disclosure of credentials.
-
 - A "verifier", an entity (person, device, organization, or software agent) that verifies and validates secured digital credentials.
 
 In some contexts, holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values. When disclosed by an entity, a proof of the digital credential needs to be provided and verified, so that only the legitimate holder of the digital credential can take advantage of its possession.
@@ -19,13 +17,13 @@ The W3C has published the 'Verifiable Credentials Data Model v2.0' specification
 
 ## Goal
 
-The SPICE working group will develop a framework and recommendations for deploying digital credentials based on JOSE and COSE.
+The SPICE working group will:
 
-The SPICE working group will develop profiles of CWT/CWP, JWT/JWP (Digitial Credential Profiles) that enable the semantic interchangeability required by use cases, for example, the SPICE working group may register claims that are in JWT in the CWT registry to enable digital credentials to transistion from one security format to another.
-
-The SPICE working group will define common conventions for key discovery (Metadata Discovery) that support verification and other issue, holder and verifier related capabilities.
-
-The working group will coordinate with RATS, OAuth, JOSE, COSE and SCITT working in related areas in the identity and credential space.  The WG will also build on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and will not define novel cryptographic schemes.
+- Register claims that are in JWT in the CWT registry to enable digital credentials to transistion from one security format to another.
+- Develop a framework and recommendations for deploying digital credentials based on JOSE and COSE.
+- Develop profiles of CWT/CWP, JWT/JWP (Digitial Credential Profiles) that enable the semantic interchangeability required by use cases, for example, the SPICE working group 
+- define common conventions for key discovery (Metadata Discovery) that support verification and other issue, holder and verifier related capabilities.
+- Coordinate with RATS, OAuth, JOSE, COSE and SCITT working in related areas in the identity and credential space.  The WG will also build on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and will not define novel cryptographic schemes.
 
 ## Program of Work
 
@@ -55,7 +53,6 @@ The SPICE working group expects this document to address features relevant to di
 - 12 2024 - Submit an informational Architecture document to the IESG for publication
 - 03 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
 - 03 2025 - Submit a document as a proposed standard covering Digitial Credential Profiles to the IESG for publication
-  
 
 
 
