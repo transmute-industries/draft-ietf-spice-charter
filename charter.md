@@ -6,9 +6,7 @@ Digital credentials are essential to identity, authorization, licenses, certific
 A digital credential expresses claims or attributes about a subject, such as their name or age, and their cryptographic keys.  Some sets of claim names have already been defined by the IETF and other standards development groups (e.g., OpenID Foundation).  Digital credentials typically involve at least three entities:
 
 - An "issuer", an entity (person, device, organization, or software agent) that constructs and secures digital credentials.
-
 - A "holder", an entity (person, device, organization, or software agent) that controls the disclosure of credentials.
-
 - A "verifier", an entity (person, device, organization, or software agent) that verifies and validates secured digital credentials.
 
 In some contexts, holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values. When disclosed by an entity, a proof of the digital credential needs to be provided and verified, so that only the legitimate holder of the digital credential can take advantage of its possession.
@@ -55,7 +53,6 @@ The SPICE working group expects this document to address features relevant to di
 - 12 2024 - Submit an informational Architecture document to the IESG for publication
 - 03 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
 - 03 2025 - Submit a document as a proposed standard covering Digitial Credential Profiles to the IESG for publication
-  
 
 
 
