@@ -22,7 +22,7 @@ The W3C has published the 'Verifiable Credentials Data Model v2.0' specification
 
 ## Goal
 
-The SPICE WG will profile existing IETF technologies and address residual gaps that would enable their use in digital credentials and presentation.
+The SPICE WG will profile existing IETF technologies and address residual gaps that would enable their use in digital credentials and presentations.
 
 - The JOSE WG is already standardizing the token format for unlinkability & selective disclosure in the form of JWP/CWP (draft-ietf-jose-json-web-proof). The SPICE WG will profile theses token formats for use with digital credentials. 
 
