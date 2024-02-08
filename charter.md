@@ -32,9 +32,21 @@ The SPICE working group will:
 
 The SPICE working group will focus on the following program of work:
 
-* An architecture document that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier. 
-* An HTTPS/CoAP based meta-data discovery document enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs. With high probability this will build on HTTP, but with some consideration for constrained devices and with a good deal of inspiration from recent HTTP work in OAuth, for example, the "vc-jwt-issuer" metadata work in [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), but enabling CBOR and COSE based metadata formats.
-* A digital credential profile document of security formats, such as JWT, SD-JWT, JWP, CWT, SD-CWT, that enable digital credentials with unlinkability and selective disclosure. This document will deliver "token formats" (profiles of CWT/CWP, JWT/JWP), which are concrete instantiations of the security formats the SPICE WG is profiling. For CWP/JWP see [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/). The credential profile document will address features relevant to digital credentials that have been exclusively implemented in JSON or CBOR and provide an integrated concrete approach for JSON and CBOR based credentials.
+* An informational architecture document that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier. 
+* A proposed standard HTTPS/CoAP based meta-data discovery document enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs. With high probability this will build on HTTP, but with some consideration for constrained devices and with a good deal of inspiration from recent HTTP work in OAuth, for example, the "vc-jwt-issuer" metadata work in [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), but enabling CBOR and COSE based metadata formats.
+* Proposed standards for digital credential profiles of security formats:
+  * The JOSE WG is already standardizing the JWP/CWP token formats. This group
+    will build upon those formats to deliver a profile of those token formats for
+    use as digital credentials and digital presentations. See
+    [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/).
+  * The OAuth WG is already standardizing JWT and SD-JWT. This group will build
+    upon those formats to deliver a profile of those token formats for use as
+    digital credentials and digital presentations.
+  * The COSE WG is already standardizing CWT. This group will build upon that
+    format to deliver a profile of that token format for use as digital
+    credentials and digital presentations.
+* A proposed standard for a token format based on CWT and SD-JWT that enables
+  digital credentials with unlinkability and selective disclosure in CBOR.
 
 ## Milestones
 
