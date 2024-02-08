@@ -17,38 +17,38 @@ When disclosed by an entity, a proof of the digital credential needs to be provi
 Some holders may wish to carry more than one digital credential.
 These credentials, together with associated key material, can be stored in an identity digital wallet.
 
-The W3C has published the 'Verifiable Credentials Data Model v2.0' specification (VCDM) with data serialization in JSON-LD.
-In this charter, the VCDM defined concept of “verifiable credential” and “verifiable presentation” is captured using the wording "digital credential" and "digital presentation" respectively.
+The W3C has published the 'Verifiable Credentials Data Model v2.0' specification (VCDM) with data serialization in JSON-LD.  In this charter, the VCDM defined concept of “verifiable credential” and “verifiable presentation” is captured using the wording "digital credential" and "digital presentation" respectively.
 
-The SPICE WG, coordinates with RATS, OAuth, JOSE, COSE and SCITT working groups that develop documetns related to the identity and credential space.  
-The SPICE WG builds on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and does not define novel cryptographic schemes.
 
 ## Goal
 
-The JOSE WG is already standardizing the token format for unlinkability & selective disclosure in the form of JWP/CWP.
-The SPICE WG profiles this token format to define/standardize digital credentials formats. 
-See [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/).
+The SPICE WG will profile existing IETF technologies and address residual gaps that would enable their use in digital credentials and presentations.
 
-The OAUTH WG is already standardizing the token format for unlinkability & selective disclosure in the form of SD-JWT/SD-JWT-VC.
-The SPICE WG profiles this token format to define/standardize digital credentials formats, and support similar functionality for SD-CWT/SD-CWT-VC. 
-See [draft-ietf-oauth-selective-disclosure-jwt](https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/) and [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/).
+- The JOSE WG is already standardizing a token format for unlinkability & selective disclosure in the form of JWP/CWP (draft-ietf-jose-json-web-proof). The SPICE WG will profile these token formats for use with digital credentials. 
 
-The ACE WG has already standardized CWT. 
-This group will build upon that format to deliver a profile of that token format for use as digital credentials and digital presentations. 
-See [RFC8392](https://datatracker.ietf.org/doc/html/rfc8392).
+
+- The OAUTH WG is already standardizing a token format for unlinkability & selective disclosure in the form of SD-JWT/SD-JWT-VC (draft-ietf-oauth-selective-disclosure-jwt and draft-ietf-oauth-sd-jwt-vc). The SPICE WG will define SD-CWT/SD-CWT-VC, analogs for these JWT-based tokens but based on CWT. 
+
+
+The SPICE WG, coordinates with RATS, OAuth, JOSE, COSE and SCITT working groups that develop documents related to the identity and credential space. The SPICE WG builds on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and does not define novel cryptographic schemes.
+
+The SPICE WG will not develop digital credentials for any particular use case.  The general purpose profiles the WG will define will enable credential issuers to more easily build on existing IETF technologies.
 
 ## Program of Work
 
 * An informational Architecture that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier. 
 
-* A proposed standard for Digitial Credential Profiles covering JWT, SD-JWT, JWP, CWT, SD-CWT, that enable digital credentials with unlinkability and selective disclosure. Including registering claims that are in JWT in the CWT registry to enable digital credentials to transition from one security format to another. This document will deliver "token formats" (profiles of CWT/CWP, JWT/JWP), which are concrete instantiations of the security formats the SPICE WG is profiling. For CWP/JWP see [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/). The credential profile document will address features relevant to digital credentials that have been exclusively implemented in JSON or CBOR and provide an integrated concrete approach for JSON and CBOR based credentials.
+* Proposed standard documents for digital credential profiles covering JWP and CWP (from JOSE) that enable digital credentials with unlinkability and selective disclosure. This work will include registering claims that are in the JWT and CWT registries to enable digital credentials to transition from one security format to another (i.e., JSON/CBOR). 
+* Proposed standard document defining SD-CWT, a profile of CWT inspired by SD-JWT (from OAuth) that enables digital credentials with unlinkability and selective disclosure.
 
-* A proposed standard for Metadata Discovery protocol using HTTPS/CoAP, enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs. Compatibility with the "vc-jwt-issuer" metadata work in [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), will be maintained, while the SPICE WG expands the approach to support CBOR and COSE based metadata formats.
+
+
+* A proposed standard Metadata Discovery protocol using HTTPS/CoAP for CBOR-based digital credentials to enable the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credential types and proofs.  The design will be inspired by the OAuth "vc-jwt-issuer" metadata work (draft-ietf-oauth-sd-jwt-vc) which supports ecosystems using JSON serialization.
 
 ## Milestones
 
 * 04 2025 - Submit an informational Architecture document to the IESG for publication
-* 07 2025 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
-* 07 2025 - Submit a document as a proposed standard covering Digitial Credential Profiles to the IESG for publication
-
+* 10 2025 - Submit a proposed standard document covering a JWP/CWP profile for digital credentials  to the IESG for publication
+* 10 2025 - Submit a proposed standard document defining SD-CWT to the IESG for publication
+* 03 2026 - Submit a document as a proposed standard covering Metadata Discovery to the IESG for publication
 
