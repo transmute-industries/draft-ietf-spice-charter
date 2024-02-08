@@ -52,4 +52,3 @@ See [RFC8392](https://datatracker.ietf.org/doc/html/rfc8392).
 * 07 2025 - Submit a document as a proposed standard covering Digitial Credential Profiles to the IESG for publication
 
 
-
