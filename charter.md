@@ -24,7 +24,7 @@ The W3C has published the 'Verifiable Credentials Data Model v2.0' specification
 
 The SPICE WG will profile existing IETF technologies and address residual gaps that would enable their use in digital credentials and presentations.
 
-- The JOSE WG is already standardizing the token format for unlinkability & selective disclosure in the form of JWP/CWP (draft-ietf-jose-json-web-proof). The SPICE WG will profile theses token formats for use with digital credentials. 
+- The JOSE WG is already standardizing the token format for unlinkability & selective disclosure in the form of JWP/CWP (draft-ietf-jose-json-web-proof). The SPICE WG will profile these token formats for use with digital credentials. 
 
 
 - The OAUTH WG is already standardizing the token format for unlinkability & selective disclosure in the form of SD-JWT/SD-JWT-VC (draft-ietf-oauth-selective-disclosure-jwt and draft-ietf-oauth-sd-jwt-vc). The SPICE WG will define SD-CWT/SD-CWT-VC, analogs for these JWT-based tokens but based on CWT. 
