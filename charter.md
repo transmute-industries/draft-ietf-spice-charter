@@ -45,9 +45,8 @@ The SPICE working group will focus on the following program of work:
   * The COSE WG is already standardizing CWT. This group will build upon that
     format to deliver a profile of that token format for use as digital
     credentials and digital presentations.
-* This group will develop a proposed standard for a token format based on CWT
-  and SD-JWT called SD-CWT that enable digital credentials with unlinkability 
-  and selective disclosure.
+* A proposed standard for a token format based on CWT and SD-JWT that enables
+  digital credentials with unlinkability and selective disclosure in CBOR.
 
 ## Milestones
 
