@@ -18,35 +18,24 @@ These credentials, together with associated key material, can be stored in an id
 The W3C has published the 'Verifiable Credentials Data Model v2.0' specification (VCDM) with data serialization in JSON-LD.
 In this charter, the VCDM defined concept of “verifiable credential” and “verifiable presentation” is captured using the wording "digital credential" and "digital presentation" respectively.
 
+The SPICE WG, coordinates with RATS, OAuth, JOSE, COSE and SCITT working groups that develop documetns related to the identity and credential space.  
+The SPICE WG builds on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and does not define novel cryptographic schemes.
+
 ## Goal
 
-The SPICE working group will:
+The JOSE WG is already standardizing the token format for unlinkability & selective disclosure in the form of JWP/CWP.  The SPICE WG profiles this token format to define/standardize digital credentials formats. See [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/).
 
-- Register claims that are in JWT in the CWT registry to enable digital credentials to transistion from one security format to another.
-- Develop a framework and recommendations for deploying digital credentials based on JOSE and COSE.
-- Develop profiles of CWT/CWP, JWT/JWP (Digitial Credential Profiles) that enable the semantic interchangeability required by use cases, for example, the SPICE working group 
-- define common conventions for key discovery (Metadata Discovery) that support verification and other issue, holder and verifier related capabilities.
-- Coordinate with RATS, OAuth, JOSE, COSE and SCITT working in related areas in the identity and credential space.  The WG will also build on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and will not define novel cryptographic schemes.
+The OAUTH WG is already standardizing the token format for unlinkability & selective disclosure in the form of SD-JWT/SD-JWT-VC.  The SPICE WG profiles this token format to define/standardize digital credentials formats, and support similar functionality for SD-CWT/SD-CWT-VC. See [draft-ietf-oauth-selective-disclosure-jwt](https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/) and [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/).
+
+The ACE WG is already standardizing CWT. This group will build upon that format to deliver a profile of that token format for use as digital credentials and digital presentations. See [RFC8392](https://datatracker.ietf.org/doc/html/rfc8392).
 
 ## Program of Work
 
-The SPICE working group will focus on the following program of work:
+* An informational architecture that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier. 
 
-* An informational architecture document that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier. 
-* A proposed standard HTTPS/CoAP based meta-data discovery document enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs. With high probability this will build on HTTP, but with some consideration for constrained devices and with a good deal of inspiration from recent HTTP work in OAuth, for example, the "vc-jwt-issuer" metadata work in [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), but enabling CBOR and COSE based metadata formats.
-* Proposed standards for digital credential profiles of security formats:
-  * The JOSE WG is already standardizing the JWP/CWP token formats. This group
-    will build upon those formats to deliver a profile of those token formats for
-    use as digital credentials and digital presentations. See
-    [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/).
-  * The OAuth WG is already standardizing JWT and SD-JWT. This group will build
-    upon those formats to deliver a profile of those token formats for use as
-    digital credentials and digital presentations.
-  * The COSE WG is already standardizing CWT. This group will build upon that
-    format to deliver a profile of that token format for use as digital
-    credentials and digital presentations.
-* A proposed standard for a token format based on CWT and SD-JWT that enables
-  digital credentials with unlinkability and selective disclosure in CBOR.
+* A proposed standard for digital credential profiles covering JWT, SD-JWT, JWP, CWT, SD-CWT, that enable digital credentials with unlinkability and selective disclosure. Including registering claims that are in JWT in the CWT registry to enable digital credentials to transition from one security format to another. This document will deliver "token formats" (profiles of CWT/CWP, JWT/JWP), which are concrete instantiations of the security formats the SPICE WG is profiling. For CWP/JWP see [draft-ietf-jose-json-web-proof](https://datatracker.ietf.org/doc/draft-ietf-jose-json-web-proof/). The credential profile document will address features relevant to digital credentials that have been exclusively implemented in JSON or CBOR and provide an integrated concrete approach for JSON and CBOR based credentials.
+
+* A proposed standard for meta-data discovery protocol using HTTPS/CoAP, enabling the 3 roles (issuers, holders and verifiers) to discover supported protocols and formats for keys, claims, credentials and proofs. Compatibility with the "vc-jwt-issuer" metadata work in [draft-ietf-oauth-sd-jwt-vc](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), will be maintained, while the SPICE WG expands the approach to support CBOR and COSE based metadata formats.
 
 ## Milestones
 
