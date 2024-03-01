@@ -30,9 +30,9 @@ The SPICE WG, coordinates with RATS, OAuth, JOSE, COSE and SCITT working groups 
 
 The SPICE WG will not develop digital credentials for any particular use case.  The general purpose profiles the WG will define will enable credential issuers to more easily build on existing IETF technologies.
 
-##	Out of Scope
+## Out of Scope
 
-*	General Key discovery is out of scope for this document, there are several mechanisms for distributing or discovering key material  (references go here),
+*	General Key discovery is out of scope for this document, there are several mechanisms for distributing or discovering key material, for example https://openid.net/specs/openid-connect-discovery-1_0.html.
 
 ## Program of Work
 
