@@ -32,6 +32,8 @@ The SPICE WG will develop digital credential profiles which can support a number
 To help guide engineering decisions, requirements for proposed standards in the program of work will be created in coordination with the working groups listed above.
 The profiles developed by the SPICE WG will enable digital credentials to leverage existing IETF technologies.
 
+Privacy by design, confidentiality, and consent will be considered, and guidance will be given for each proposed standards in the program of work.
+
 ## Out of Scope
 
 *	General Key discovery is out of scope for this document, there are several mechanisms for distributing or discovering key material, for example https://openid.net/specs/openid-connect-discovery-1_0.html.
