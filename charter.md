@@ -36,6 +36,8 @@ Privacy by design, confidentiality, and consent will be considered, and guidance
 
 The privacy and security considerations related to the impact of confidential computing, remote attestation, and hardware security module (HSM) on digital credentials will be developed in cooridination with relevant IETF WGs, and feedback from experts on the mailing list.
 
+Privacy and security considerations regarding redaction, linkability and selective disclosure will be developed for proposed standards in the program of work that offer data minimization capabilities.
+
 ## Out of Scope
 
 *	General Key discovery is out of scope for this document, there are several mechanisms for distributing or discovering key material, for example https://openid.net/specs/openid-connect-discovery-1_0.html.
