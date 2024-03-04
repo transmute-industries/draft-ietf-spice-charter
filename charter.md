@@ -28,7 +28,7 @@ The SPICE WG will profile existing IETF technologies and address residual gaps t
 
 The SPICE WG, coordinates with RATS, OAuth, JOSE, COSE and SCITT working groups that develop documents related to the identity and credential space. The SPICE WG builds on cryptographic primitives defined in the CFRG (e.g., BBS Signatures) and does not define novel cryptographic schemes.
 
-The SPICE WG will develop digital credential profiles which can support a number of use cases.
+The SPICE WG develops digital credential profiles which can support a number of use cases.
 To help guide engineering decisions, requirements for proposed standards in the program of work will be created in coordination with the working groups listed above.
 The profiles developed by the SPICE WG will enable digital credentials to leverage existing IETF technologies.
 
