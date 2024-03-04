@@ -34,7 +34,7 @@ The profiles developed by the SPICE WG will enable digital credentials to levera
 
 Privacy by design, confidentiality, and consent will be considered, and guidance will be given for each proposed standards in the program of work.
 
-The privacy and security considerations related to the impact of confidential computing, remote attestation, and hardware security module (HSM) on digital credentials will be developed in cooridination with relevant IETF WGs, and feedback from experts on the mailing list.
+The privacy and security considerations related to the impact of confidential computing, remote attestation, and hardware security modules (HSM) on digital credentials will be developed in coordination with relevant IETF WGs, and feedback from experts on the mailing list.
 
 Privacy and security considerations regarding redaction, linkability and selective disclosure will be developed for proposed standards in the program of work that offer data minimization capabilities.
 
