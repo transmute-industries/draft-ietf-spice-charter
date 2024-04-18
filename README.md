@@ -8,6 +8,6 @@
 
 ## History
 
-This repository is no longer maintaintained.
-This repository was used to iterate on early versions of the BoF and charter text.
+- This repository is no longer maintaintained.
+- This repository was used to iterate on early versions of the BoF and charter text.
 
